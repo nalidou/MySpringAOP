@@ -16,7 +16,7 @@ public class MyInvocationHandler implements InvocationHandler {
         if (target == null) {
             throw new RuntimeException("target is null");
         }
-        System.out.println("【MyInvocationHandler】 在这里处理");
+        System.out.println("【MyInvocationHandler】 在这里处理业务");
         return method.invoke(target, args);
     }
 }
